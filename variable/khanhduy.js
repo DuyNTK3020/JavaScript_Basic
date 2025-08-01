@@ -15,3 +15,7 @@ age = 30;
 const myAge = 25;
 
 console.log(age);
+
+const log = `My name is ${name}, and I'm ${age}`
+
+console.log(log);
