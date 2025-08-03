@@ -12,3 +12,22 @@ else if (score >= 2.8) {
 else {
     console.log("Tach");
 }
+
+function greeting() {
+    console.log("say hi");
+}
+
+greeting();
+
+// function sum(a, b) {
+//     return a + b;
+// }
+
+const sum = (a, b) => {
+    return a + b;
+}
+
+const a = 1;
+const b = 2;
+
+console.log(`Tong cua ${a} + ${b} = ${sum(a, b)}`)
