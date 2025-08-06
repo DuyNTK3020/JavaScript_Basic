@@ -19,3 +19,11 @@ console.log(colors);
 
 colors.shift()
 console.log(colors);
+
+const length = colors.length;
+
+for (let i = 0; i < length; i++) {
+    console.log("i =", i, "color =", colors[i]);
+}
+
+colors.forEach((value, index) => {console.log("value", value, "index", index)})
