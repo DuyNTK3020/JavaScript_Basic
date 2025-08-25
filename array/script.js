@@ -8,15 +8,19 @@ console.log(colors[0]);
 
 console.log(colors);
 
+// Thêm vào cuối mảng
 colors.push("orange");
 console.log(colors);
 
+// Thêm vào đầu mảng
 colors.unshift("test");
 console.log(colors);
 
+// Xóa cuối mảng
 colors.pop();
 console.log(colors);
 
+// Xóa đầu mảng
 colors.shift()
 console.log(colors);
 
