@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create todo</h1>
+    <span>Name</span><input id="todoName" type="text">
+    <button id="saveBtn">Save</button>
+    <script>
+        function generateId() {
+            return Date.now().toString(36) + Math.random().toString(36).substr(2, 9);
+        }
+        const data = localStorage.getItem("todo") || [];
+        const todoName = document.getElementById("todoName");
+        const saveBtn = document.querySelector("#saveBtn");
+        saveBtn.addEventListener("click", () => {
+            data.push({id: generateId(), name : todoName.value});
+            localStorage.setItem("todo", JSON.stringify(data));
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+</html>
