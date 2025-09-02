@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blogs {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #blogs td,
+        #blogs th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #blogs tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #blogs tr:hover {
+            background-color: #ddd;
+        }
+
+        #blogs th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table Blogs</h1>
+
+    <div class="form">
+        <span>Title: </span>
+        <input id="title" type="text">
+        <span>Author: </span>
+        <input id="author" type="text">
+        <span>Content: </span>
+        <input id="content" type="text">
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <table id="blogs">
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Content</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
